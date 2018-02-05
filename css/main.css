@@ -1,0 +1,45 @@
+/* 
+Note:
+Only make a style rule or add a property: value pair to a style declaration
+if there is something that changes at a certain screen size. 
+See below, I only want the height of my sections to change at tablet size and then at portrait phone size.
+
+Re-size your browser window to see the background color change
+*/
+
+/* Extra large devices (large desktops) */
+/* No media query since the extra-large breakpoint has no upper bound on its width */
+section {
+    background-color: yellowgreen;
+    height: 300px;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) { 
+    section {
+        background-color: yellow;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) { 
+    section {
+        background-color: orange;
+        height: 200px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) { 
+    section {
+        background-color: orangered;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) { 
+    section {
+        background-color: red;
+        height: 100px;
+    }
+}
