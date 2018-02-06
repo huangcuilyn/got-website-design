@@ -1,17 +1,33 @@
-/* 
-Note:
-Only make a style rule or add a property: value pair to a style declaration
-if there is something that changes at a certain screen size. 
-See below, I only want the height of my sections to change at tablet size and then at portrait phone size.
+/* Font Stuff */
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700');
 
-Re-size your browser window to see the background color change
-*/
+@font-face {
+    font-family: gothamNarrow;
+    src: url(../fonts/GothamNarrow-Book.otf);
+}
 
+@font-face {
+    font-family: gothamNarrow;
+    src: url(../fonts/GothamNarrow-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: gothamNarrow;
+    src: url(../fonts/GothamNarrow-Light.otf);
+    font-weight: 200;
+}
+
+/* Styles */
 /* Extra large devices (large desktops) */
 /* No media query since the extra-large breakpoint has no upper bound on its width */
 body {
     width: 100%;
-    font-size: 62.5%;
+    font-family: gothamNarrow;
+    font-size: 14px;
+}
+main {
+    100%;
 }
 
 nav {
@@ -19,13 +35,14 @@ nav {
     min-width: 320px;
     text-transform: uppercase;
     background-color: #323232;
-    font-weight: 400;
+    font-weight: 200;
     /* hover: #4c4f62; */
 }
 
 nav ul {
-    height: 50px;
-    line-height: 50px;
+    /*height: 50px;*/
+    /*line-height: 50px;*/
+    /*width: 5*/
 
 }
 
@@ -33,27 +50,81 @@ nav li {
     list-style-type: none;
     display: inline;
     margin-right: 50px;
+    /*height: 500px;*/
+    /*width: 50px;*/
+    padding-right: 50px;
+    border-right: 1px solid #2a2a2a;
 
 }
 
 nav ul li a {
-    color: #ffffff;
-    border-right: 1px solid #2a2a2a;
-    font-size: 2em;
+    color: gray;
+    font-size: 0.8em;
     text-align: center;
 }
 
+.cinzel {
+    font-family: 'Cinzel', Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 3rem;
+    line-height: 1em;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.cinzel h2 {
+    margin-top: 20px;
+    font-size: 5.2rem;
+    line-height: .9em;
+}
+
+hr {
+    background: #8d97d7;
+    width: 17%;
+    height: 2px;
+}
 .logo {
     max-height: 24px;
     margin-left: 15px;
 }
-.hero {
-    background-image: url('../media/hero-img.jpg');
+
+.img-span {
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    /*position: relative;*/
 }
 
-.inside {
-    background-image: url('../media/inside-img.jpg');
+#hero {
+    background-image: url('../media/hero-img.jpg');
+    height: 636px;
 }
+
+#inside {
+    background-image: url('../media/inside-img.jpg');
+    height: 469px;
+}
+
+#greyjoy {
+    background-image: url('../media/greyjoy-quote.jpg');
+    height: 450px;
+}
+
+#jon {
+    background-image: url('../media/jon-quote.jpg');
+    height: 450px;
+}
+
+#brienne {
+    background-image: url('../media/brienne-quote.jpg');
+    height: 450px;
+}
+
+#sansa {
+    background-image: url('../media/sansa-quote.jpg');
+    height: 450px;
+}
+
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199px) {
