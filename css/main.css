@@ -9,37 +9,64 @@ Re-size your browser window to see the background color change
 
 /* Extra large devices (large desktops) */
 /* No media query since the extra-large breakpoint has no upper bound on its width */
-section {
-    background-color: yellowgreen;
-    height: 300px;
+body {
+    width: 100%;
+    font-size: 62.5%;
+}
+
+nav {
+    height: 40px;
+    min-width: 320px;
+    text-transform: uppercase;
+    background-color: #323232;
+    font-weight: 400;
+    /* hover: #4c4f62; */
+}
+
+nav ul {
+    height: 50px;
+    line-height: 50px;
+
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 50px;
+
+}
+
+nav ul li a {
+    color: #ffffff;
+    border-right: 1px solid #2a2a2a;
+    font-size: 2em;
+    text-align: center;
+}
+
+.logo {
+    max-height: 24px;
+    margin-left: 15px;
+}
+.hero {
+    background-image: url('../media/hero-img.jpg');
+}
+
+.inside {
+    background-image: url('../media/inside-img.jpg');
 }
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199px) { 
-    section {
-        background-color: yellow;
-    }
+@media (max-width: 1199px) {
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991px) { 
-    section {
-        background-color: orange;
-        height: 200px;
-    }
+@media (max-width: 991px) {
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767px) { 
-    section {
-        background-color: orangered;
-    }
+@media (max-width: 767px) {
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) { 
-    section {
-        background-color: red;
-        height: 100px;
-    }
+@media (max-width: 575px) {
 }
