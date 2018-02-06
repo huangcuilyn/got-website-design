@@ -1,5 +1,6 @@
 /* Font Stuff */
 @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
 
 @font-face {
     font-family: gothamNarrow;
@@ -22,12 +23,14 @@
 /* Extra large devices (large desktops) */
 /* No media query since the extra-large breakpoint has no upper bound on its width */
 body {
-    width: 100%;
+    min-width: 100%;
     font-family: gothamNarrow;
     font-size: 14px;
+    background-color: #ffffff;
 }
-main {
-    100%;
+
+.container {
+    width: 100%;
 }
 
 nav {
@@ -67,22 +70,16 @@ nav ul li a {
     font-family: 'Cinzel', Georgia, 'Times New Roman', serif;
     font-weight: 400;
     color: #ffffff;
-    font-size: 3rem;
-    line-height: 1em;
-    text-shadow: 2px 2px 2px #000;
 }
 
-.cinzel h2 {
-    margin-top: 20px;
-    font-size: 5.2rem;
-    line-height: .9em;
-}
+
 
 hr {
     background: #8d97d7;
     width: 17%;
     height: 2px;
 }
+
 .logo {
     max-height: 24px;
     margin-left: 15px;
@@ -91,13 +88,47 @@ hr {
 .img-span {
     background-size: cover;
     background-repeat: no-repeat;
-    display: block;
+    background-position: center;
+    /*display: block;*/
+    min-width: 100%;
     /*position: relative;*/
 }
 
 #hero {
     background-image: url('../media/hero-img.jpg');
     height: 636px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+}
+
+#hero h1{
+    font-size: 1.6rem;
+    line-height: 1em;
+
+}
+
+#hero h2 {
+    margin-top: 20px;
+    font-size: 6.5rem;
+    line-height: .9em;
+}
+
+#hero-text {
+
+}
+
+#inside-heading {
+    display: table;
+    /*width: 842px;*/
+    margin: 0 auto;
+    padding: 25px 0;
+    color: #000;
+/*    font-family: 'Cinzel', Georgia,'Times New Roman';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8em;
+    line-height: 1em;
+    text-transform: uppercase;*/
 }
 
 #inside {
@@ -105,6 +136,25 @@ hr {
     height: 469px;
 }
 
+#inside a {
+    font-family: 'Oswald'; sans-serif
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.quote {
+    height: 450px;
+    text-shadow: none;
+}
+.quote q {
+    font-size: 3rem;
+    line-height: 1.3rem;
+}
+
+.quote p {
+    font-size: 1rem;
+    margin: .5rem;
+}
 #greyjoy {
     background-image: url('../media/greyjoy-quote.jpg');
     height: 450px;
@@ -124,8 +174,98 @@ hr {
     background-image: url('../media/sansa-quote.jpg');
     height: 450px;
 }
+.explore-episode {
+    margin: 20px auto 0;
+    color: #191919;
+    overflow: hidden;
+}
 
+.explore-episode h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 2px 0;
+}
+.explore-episode a {
+    color: #191919
+}
+.explore-episode p {
+    font-family: 'gothamNarrow', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.2em;
+    margin: 2px 0;
+}
 
+.explore-episode img {
+    width: 100%;
+    margin: none;
+    padding-bottom: none;
+}
+.explore-episode figcaption {
+    padding: 20px 30px;
+    background-color: #fff;
+    height: 141px;
+    display: block;
+}
+.explore-icon {
+    background: #4c4f62;
+    width: 41px;
+    height: 41px;
+    padding: 8px;
+    -webkit-background-size: 19px;
+    -moz-background-size: 19px;
+    background-size: 19px;
+    background-position: center;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+}
+
+figure {
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.6);
+    box-shadow: 0 0 1px rgba(0,0,0,.6);
+    margin: 1% 0 1% 1.19%;
+    /*position: relative;*/
+    /*overflow: hidden;*/
+    /*float: left;*/
+}
+
+.people figure {
+    display: block;
+}
+
+.people img {
+    width: 100%;
+    display: block;
+    margin: none;
+    padding-bottom: none;
+}
+.people figcaption {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.people h1 {
+}
+
+#cersei {
+    height: 546px;
+}
+
+#cersei h2 {
+    text-transform: capitalize;
+}
+
+#cersei figcaption {
+        color: #fff;
+    position: absolute;
+    bottom: 16px;
+    left: 22px;
+}
+
+#tyrion, #euron, #podrick, #yohn {
+    height: 268px;
+}
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199px) {
 }
