@@ -89,6 +89,7 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     /*display: block;*/
     min-width: 100%;
     /*position: relative;*/
@@ -231,7 +232,7 @@ figure {
     /*float: left;*/
 }
 
-.people figure {
+/*.people figure {
     display: block;
 }
 
@@ -244,28 +245,30 @@ figure {
 .people figcaption {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-}
-.people h1 {
+}*/
+
+.card-deck {
+    float: left;
 }
 
-#cersei {
-    height: 546px;
+.card-text {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
-#cersei h2 {
+#cersei-card {
+    display: flex;
+}
+#cersei-h1 {
     text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
 }
 
-#cersei figcaption {
-        color: #fff;
-    position: absolute;
-    bottom: 16px;
-    left: 22px;
+#cersei-h2 {
+    color: #ffffff;
 }
 
-#tyrion, #euron, #podrick, #yohn {
-    height: 268px;
-}
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199px) {
 }
