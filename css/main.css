@@ -229,6 +229,7 @@ hr {
     margin: 1% 0 1% 1.19%;
     border-radius: 1px;
 }*/
+
 .card-img-top {
     border-radius: 1px;
 }
@@ -243,7 +244,7 @@ hr {
     font-weight: 300;
 }
 
-#cersei-h2 {
+#cersei-h2, #cersei-p {
     color: #ffffff;
 }
 
