@@ -34,49 +34,50 @@ body {
 }
 
 nav {
-    height: 40px;
-    min-width: 320px;
+    min-height: 48px;
+    /*min-width: 320px;*/
     text-transform: uppercase;
     background-color: #323232;
     font-weight: 200;
-    /* hover: #4c4f62; */
 }
 
 nav ul {
-    /*height: 50px;*/
-    /*line-height: 50px;*/
-    /*width: 5*/
+    position: absolute;
+    right: 0;
 
 }
 
 nav li {
     list-style-type: none;
     display: inline;
-    margin-right: 50px;
-    /*height: 500px;*/
-    /*width: 50px;*/
-    padding-right: 50px;
-    border-right: 1px solid #2a2a2a;
+    margin-right: 15px;
+    clear: both;
+}
 
+.vl {
+    border-left: 1px solid #2a2a2a;
+    height: 48px;
+    margin-left: -3px;
+    display: inline-block;
 }
 
 nav ul li a {
     color: gray;
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
+    margin: 30px;
 }
 
 .cinzel {
     font-family: 'Cinzel', Georgia, 'Times New Roman', serif;
     font-weight: 400;
     color: #ffffff;
+    text-transform: uppercase;
 }
-
-
 
 hr {
     background: #8d97d7;
-    width: 17%;
+    width: 20%;
     height: 2px;
 }
 
@@ -90,9 +91,8 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    /*display: block;*/
     min-width: 100%;
-    /*position: relative;*/
+    border-bottom: solid 14px #000;
 }
 
 #hero {
@@ -100,47 +100,83 @@ hr {
     height: 636px;
     text-align: center;
     text-shadow: 2px 2px 2px #000;
+    border-bottom: solid 14px #000;
 }
 
 #hero h1{
     font-size: 1.6rem;
-    line-height: 1em;
+    line-height: .9em;
 
 }
 
 #hero h2 {
     margin-top: 20px;
-    font-size: 6.5rem;
-    line-height: .9em;
+    font-size: 6rem;
+    line-height: .8em;
 }
 
-#hero-text {
+#hero a {
+    font-family: 'Oswald'; sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 5em;
+}
 
+#hero a:link {
+    color: #ffffff;
+}
+
+/* visited link */
+#hero a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+#hero a:hover {
+    color: #ffffff;
+}
+
+#hero a:active {
+    color: #ffffff;
 }
 
 #inside-heading {
     display: table;
-    /*width: 842px;*/
-    margin: 0 auto;
+    font-size: 4em;
     padding: 25px 0;
     color: #000;
-/*    font-family: 'Cinzel', Georgia,'Times New Roman';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 8em;
-    line-height: 1em;
-    text-transform: uppercase;*/
+    text-transform: small-caps;
 }
 
 #inside {
     background-image: url('../media/inside-img.jpg');
     height: 469px;
+    border: none;
+}
+
+#inside h1 {
+    text-shadow: 2px 2px 2px #000;
+    text-transform: uppercase;
+    font-size: 4em;
+    margin-bottom: 15px;
 }
 
 #inside a {
     font-family: 'Oswald'; sans-serif
     color: #ffffff;
     text-transform: uppercase;
+    font-size: 1.1rem;
+    border: solid 1px #ffffff;
+    padding: 15px;
+}
+
+#inside a:link,
+#inside a:visited,
+#inside a:hover,
+#inside a:active  {
+    color: #ffffff;
 }
 
 .quote {
@@ -148,14 +184,15 @@ hr {
     text-shadow: none;
 }
 .quote q {
-    font-size: 3rem;
-    line-height: 1.3rem;
+    font-size: 2.4rem;
+    line-height: 1.3em;
 }
 
 .quote p {
     font-size: 1rem;
     margin: .5rem;
 }
+
 #greyjoy {
     background-image: url('../media/greyjoy-quote.jpg');
     height: 450px;
@@ -176,9 +213,9 @@ hr {
     height: 450px;
 }
 .explore-episode {
-    margin: 20px auto 0;
     color: #191919;
-    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .explore-episode h1 {
@@ -186,48 +223,53 @@ hr {
     font-weight: 300;
     font-size: 1.3rem;
     margin: 2px 0;
+    text-transform: capitalize;
 }
 .explore-episode a {
     color: #191919
 }
 .explore-episode p {
     font-family: 'gothamNarrow', sans-serif;
-    font-size: 0.8rem;
-    line-height: 1.2em;
-    margin: 2px 0;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+
+    text-transform: none;
 }
 
-.explore-episode img {
-    width: 100%;
-    margin: none;
-    padding-bottom: none;
+.ep-block {
+    padding: 30px;
+
 }
-.explore-episode figcaption {
-    padding: 20px 30px;
-    background-color: #fff;
-    height: 141px;
-    display: block;
-}
-.explore-icon {
-    background: #4c4f62;
-    width: 41px;
-    height: 41px;
-    padding: 8px;
-    -webkit-background-size: 19px;
-    -moz-background-size: 19px;
-    background-size: 19px;
-    background-position: center;
-    position: absolute;
-    display: inline-block;
-    left: 0;
-    top: 0;
+
+#people-row {
+    margin-bottom: 50px;
 }
 
 #people-heading {
     display: table;
-    margin: 0 auto;
+    font-size: 4em;
     padding: 25px 0;
     color: #000;
+    text-transform: small-caps;
+}
+
+#cersei-h1 {
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+#cersei-h2  {
+    color: #ffffff;
+    font-size: 5rem;
+    line-height: 0.9em;
+}
+
+#cersei-p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 .card-img-top {
@@ -240,46 +282,28 @@ hr {
 }
 
 .people-card {
-    padding-bottom: 10px;
+    padding: 10px 5px 15px 10px;
 }
 
 .card-title {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    font-weight: 300;
     font-size: 1.2rem;
-    line-height: 1em;
-    margin: 12px 0 0 10px;
+    line-height: 0.9em;
 }
 
 .card-subtitle {
     font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
     text-transform: uppercase;
-    line-height: 1em;
-    margin: 0 0 0 10px;
-    /*display: inline;*/
-}
-
-#people-row: {
-    max-height: 546px;
-}
-
-#cersei-h1 {
-    text-transform: capitalize;
-    color: #ffffff;
-    font-weight: 300;
-}
-
-#cersei-h2, #cersei-p {
-    color: #ffffff;
-}
-
-#cersei-card {
-    height: 546px;
+    line-height: 0.5em;
+    font-weight: 400;
 }
 
 
 .plus {
-    line-height: 69px;
+    line-height: 3rem;
     width: 25%;
     border: none;
     border-radius: 0;
@@ -293,8 +317,102 @@ hr {
     /*z-index: 0;*/
 }
 
+#gallery {
+    margin-bottom: 50px;
+}
+#gallery-heading {
+    display: table;
+    font-size: 4em;
+    padding: 25px 0;
+    color: #000;
+    text-transform: small-caps;
+}
 
+.carousel-caption h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
 
+#locations-heading {
+    display: table;
+    font-size: 4em;
+    padding: 25px 0;
+    color: #000;
+    text-transform: small-caps;
+}
+
+#location-gallery {
+    width: 100%;
+    /*height: auto;*/
+}
+
+#loc-map {
+    display: block;
+}
+
+.loc-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.loc-text h1{
+    font-weight: 400;
+}
+
+#loc-btn {
+    background-color: #212121;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    border-radius: 1px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+}
+
+#loc-line {
+    border-color: #212121;
+    background-color: #212121;
+}
+#loc-card {
+    padding: 20px;
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#loc {
+    margin-bottom: 50px;
+}
+
+#explore-heading {
+    display: table;
+    font-size: 4em;
+    padding: 25px 0;
+    color: #000;
+    text-transform: small-caps;
+}
+
+.explore-cap {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.explore {
+    margin-bottom: 50px;
+}
+
+footer {
+    max-height: 235px;
+}
+
+footer li {
+    margin: 0 30px;
+    font-size: 1.3em;
+}
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199px) {

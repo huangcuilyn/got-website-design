@@ -7,6 +7,7 @@
         <meta name="keywords" content="HTML,CSS,JQUERY,JavaScript,Game of Thrones">
         <meta name="author" content="Khal Drogo">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Game of Thrones Viewer's Guide</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Main CSS -->
@@ -26,213 +27,289 @@
                     <a href="#"><img class="logo" src="media/got-logo.png"/></a>
                     <ul>
                         <li><a href="#" title="Home">Home</a></li>
+                        <div class="vl"></div>
                         <li><a href="#" title="People">People</a></li>
+                        <div class="vl"></div>
                         <li><a href="#" title="Houses">Houses</a></li>
+                        <div class="vl"></div>
                         <li><a href="#" title="Map">Map</a></li>
+                        <div class="vl"></div>
                         <li><a href="#" title="Histories">Histories</a></li>
+                        <div class="vl"></div>
                         <li><a href="#" title="Settings">Settings</a></li>
                     </ul>
                 </nav>
             </header>
-            <section class="container col-12 no-gutters">
+            <section class="container-fluid">
                 <section id="hero" class="img-span cinzel row align-items-center">
                     <div class="col-4 offset-1">
                         <hr></hr>
                         <h1>Season 7 Episode 7</h1>
                         <h2>The Dragon and the Wolf</h2>
+                        <a href="#">Exclusive Extras</a>
                     </div>
                 </section>
-                <section class="cinzel">
-                    <div id="inside-heading" class="row justify-content-start">
-                        <h1>Inside</h1>
+                <section class="row">
+                    <div class="cinzel col-4 offset-2">
+                        <h1 id="inside-heading">INSIDE</h1>
                     </div>
-                    <div id="inside" class="img-span row align-items-center">
-                        <div class="col-4 offset-1">
+                </section>
+                <!--QUOTE SECTION 1-->
+                <section class="row">
+                    <div id="inside" class="img-span cinzel row align-items-center">
+                        <div class="col-4 offset-2">
                             <h1>What Honor Demands</h1>
                             <a href="#">Read the Synopsis</a>
                         </div>
                     </div>
                 </section>
-                <!-- EXPLORE EPISODE -->
-                <section class="row explore-episode justify-content-between">
-                    <div class="container-fluid">
-                        <div class="col-1"></div>
-                        <div class="card-deck">
-                            <div class="card">
-                                <a href="#"><img class="card-img-top" src="media/explore-1.jpg"></a>
-                                <div class="card-block">
-                                    <h1 class="card-text explore-episode">Inside the Episode</h1>
-                                    <p class="card-text explore-episode">Series creators D.B. Weiss and David Benioff examine Jaime's decision.</p>
+                <!-- EXPLORE EPISODE CARDS -->
+                <section class="row justify-content-between">
+                    <div class="container">
+                        <div class="explore-episode col-10 offset-1">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <a href="#"><img class="card-img-top" src="media/explore-1.jpg"></a>
+                                    <div class="card-block ep-block">
+                                        <h1 class="card-text">Inside the Episode</h1>
+                                        <p class="card-text">Series creators D.B. Weiss and David Benioff examine Jaime's decision.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <a href="#"><img class="card-img-top" src="media/explore-2.jpg"></a>
-                                <div class="card-block">
-                                    <h1 class="card-text">World's Collide</h1>
-                                    <p class="card-text">The cast and crew take you inside the dragonpit.</p>
+                                <div class="card">
+                                    <a href="#"><img class="card-img-top" src="media/explore-2.jpg"></a>
+                                    <div class="card-block ep-block">
+                                        <h1 class="card-text">World's Collide</h1>
+                                        <p class="card-text">The cast and crew take you inside the dragonpit.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <a href="#"><img class="card-img-top" src="media/explore-3.jpg"></a>
-                                <div class="card-block">
-                                    <h1 class="card-text">A Union of Ice and Fire</h1>
-                                    <p class="card-text">The cast discusses Jon and Daenerys' connection.</p>
+                                <div class="card">
+                                    <a href="#"><img class="card-img-top" src="media/explore-3.jpg"></a>
+                                    <div class="card-block ep-block">
+                                        <h1 class="card-text">A Union of Ice and Fire</h1>
+                                        <p class="card-text">The cast discusses Jon and Daenerys' connection.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <a href="#"><img class="card-img-top" src="media/explore-4.jpg"></a>
-                                <div class="card-block">
-                                    <h1 class="card-text">Don't Miss a Moment</h1>
-                                    <p class="card-text">Stream every episode on HBO NOW.</p>
+                                <div class="card">
+                                    <a href="#"><img class="card-img-top" src="media/explore-4.jpg"></a>
+                                    <div class="card-block ep-block">
+                                        <h1 class="card-text">Don't Miss a Moment</h1>
+                                        <p class="card-text">Stream every episode on HBO NOW.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-1"></div>
                 </section>
+                <!--GREYJOY QUOTE-->
                 <section id="greyjoy" class="row img-span quote cinzel align-items-center">
-                    <div class="col-4 offset-1">
-                        <q>"She needs me now."</q>
+                    <div class="col-4 offset-2">
+                        <q>She needs me now.</q>
                         <p>-Theon Greyjoy</p>
                     </div>
                 </section>
                 <!-- People Section -->
-                <section class="container" id="people-row">
-                    <section class="row">
-                        <div id="people-heading" class="row justify-content-start cinzel">
-                            <h1>People</h1>
+                <section class="container-fluid" id="people-row">
+                    <div class="row">
+                        <div class="cinzel col-4 offset-2">
+                            <h1 id="people-heading">People</h1>
                         </div>
-                    </section>
-                    <section class="row">
-                        <div class="col-6">
-                            <div class="card">
-                                <img class="card-img-top" src="media/cersei.jpg" alt="Cersei Lannister">
-                                <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-                                    <h1 id="cersei-h1" class="card-text">Cersei</h1>
-                                    <h2 id="cersei-h2" class="card-text">Lannister</h2>
-                                    <p id="cersei-p" class="card-text">EXPLORE +</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-5 offset-1">
+                                <div class="card">
+                                    <img class="card-img-top" src="media/cersei.jpg" alt="Cersei Lannister">
+                                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                                        <h1 id="cersei-h1" class="card-text">Cersei</h1>
+                                        <h2 id="cersei-h2" class="card-text">Lannister</h2>
+                                        <p id="cersei-p" class="card-text">EXPLORE +</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-5">
+                                <article class="row">
+                                    <div class="card-deck">
+                                        <div class="col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="media/tyrion.jpg" alt="Tyrion Lannister">
+                                                <div class="card-block people-card">
+                                                    <h2 class="card-title">Tyrion</h2>
+                                                    <h1 class="card-subtitle">Lannister</h1>
+                                                    <div class="btn plus">+</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="media/euron.jpg" alt="Euron Greyjoy">
+                                                <div class="card-block people-card">
+                                                    <h2 class="card-title">Euron</h2>
+                                                    <h1 class="card-subtitle">Greyjoy</h1>
+                                                    <div class="plus btn">+</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class="col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="media/podrick.jpg" alt="Podrick Payne">
+                                                <div class="card-block people-card">
+                                                    <h2 class="card-title">Podrick</h2>
+                                                    <h1 class="card-subtitle">Payne</h1>
+                                                    <div class="plus btn">+</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="media/yohn.jpg" alt="Yohn Royce">
+                                                <div class="card-block people-card">
+                                                    <h2 class="card-title">Yohn</h2>
+                                                    <h1 class="card-subtitle">Royce</h1>
+                                                    <div class="plus btn">+</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <article class="row">
-                                <div class="card-deck">
-                                    <div class="col-6">
-                                        <div class="card">
-                                            <img class="card-img-top" src="media/tyrion.jpg" alt="Tyrion Lannister">
-                                            <div class="card-block people-card">
-                                                <h2 class="card-title">Tyrion</h2>
-                                                <h1 class="card-subtitle">Lannister</h1>
-                                                <div class="btn plus">+</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="card">
-                                            <img class="card-img-top" src="media/euron.jpg" alt="Euron Greyjoy">
-                                            <div class="card-block people-card">
-                                                <h2 class="card-title">Euron</h2>
-                                                <h1 class="card-subtitle">Greyjoy</h1>
-                                                <div class="plus btn">+</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-100"></div>
-                                    <div class="col-6">
-                                        <div class="card">
-                                            <img class="card-img-top" src="media/podrick.jpg" alt="Podrick Payne">
-                                            <div class="card-block people-card">
-                                                <h2 class="card-title">Podrick</h2>
-                                                <h1 class="card-subtitle">Payne</h1>
-                                                <div class="plus btn">+</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="card">
-                                            <img class="card-img-top" src="media/yohn.jpg" alt="Yohn Royce">
-                                            <div class="card-block people-card">
-                                                <h2 class="card-title">Yohn</h2>
-                                                <h1 class="card-subtitle">Royce</h1>
-                                                <div class="plus btn">+</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </section>
+                    </div>
                 </section>
                 <!--JON SNOW QUOTE-->
                 <section id="jon" class="row img-span quote cinzel align-items-center">
-                    <div class="col-4 offset-1">
-                        <q>"There is only one war that matters: The great war. And it is here."</q>
+                    <div class="col-4 offset-2">
+                        <q>There is only one war that matters: The great war. And it is here.</q>
                         <p>-Jon Snow</p>
                     </div>
                 </section>
-                <section class="galleries">
-                    <div><h1>Galleries</h1></div>
-                    <div class="gallery">
-                        <div class="gallery-title">
-                            <h1>The Dragon and the Wolf</h1>
-                        </div>
-                        <div class="slider">
+                <!-- GALLERY SECTION -->
+                <section class="row">
+                    <div class="cinzel col-4 offset-2">
+                        <h1 id="gallery-heading">GALLERIES</h1>
+                    </div>
+                </section>
+                <section class="row justify-content-between">
+                    <div class="container">
+                        <div id="gallery" class="col-10 offset-2 carousel slide ml-auto mr-auto" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#gallery" data-slide-to="0" class="active"></li>
+                                <li data-target="#gallery" data-slide-to="1"></li>
+                                <li data-target="#gallery" data-slide-to="2"></li>
+                                <li data-target="#gallery" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="media/gallery-img-1.jpg" alt="First slide">
+                                    <div class="carousel-caption">
+                                        <h3>The Dragon and the Wolf</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="media/gallery-img-2.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="media/gallery-img-3.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="media/gallery-img-4.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#gallery" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#gallery" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                 </section>
+                <!-- BRIENNE QUOTE -->
                 <section id="brienne" class="row img-span quote cinzel align-items-center">
-                    <div class="col-4 offset-1">
-                        <q>"This house goes beyond houses nad honor and oaths."</q>
+                    <div class="col-4 offset-2">
+                        <q>This house goes beyond houses and honor and oaths.</q>
                         <p>-Brienne Tarth</p>
                     </div>
                 </section>
-                <section class="locations">
-                    <div class="title"><h1>Locations</h1></div>
-                    <div class="explore-map">
-                        <a href="#">Explore the Map</a>
+                <!-- LOCATIONS -->
+                <section class="row">
+                    <div class="cinzel col-4 offset-2">
+                        <h1 id="locations-heading">LOCATIONS</h1>
                     </div>
-                    <div>
-                    </div>
+                    <!-- <div class="btn"><a href="#">Explore the Map</a></div> -->
                 </section>
+                <div id="loc" class="container">
+                    <div class="col-10 offset-1">
+                        <div class="card-group">
+                            <div class="col-5">
+                                <div class="card text-center">
+                                    <img class="card-img" src="media/location-img.jpg">
+                                    <div id="loc-card" class="card-block">
+                                        <h1 class="loc-text">Winterfell</h1>
+                                        <hr id="loc-line"></hr>
+                                        <p class="loc-text">Bran and Sam share a revelation; Littlefinger plays his final game.</p>
+                                        <div id="loc-btn" class="btn">VISIT THIS LOCATION</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="card">
+                                    <img id="loc-map" class="card-img-top" src="media/location-map.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SANSA QUOTE -->
                 <section id="sansa" class="row img-span quote cinzel align-items-center">
                     <div class="col-4 offset-1">
                         <q>"The lone wolf dies, but the pack survives."</q>
                         <p>-Sansa Stark</p>
                     </div>
                 </section>
+                <!-- EXPLORE -->
+                <section class="row">
+                    <div class="cinzel col-4 offset-2">
+                        <h1 id="explore-heading">EXPLORE</h1>
+                    </div>
+                </section>
                 <section class="explore">
-                    <div class="title">
-                        <h1>Explore</h1>
+                    <div class="container">
+                        <div class="col-10 offset-1">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="media/explore-map-media.jpg">
+                                <div class="explore-cap card-img-overlay h-100 d-flex flex-column justify-content-end">
+                                    <h1 class="card-text">Map</h1>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="media/explore-houses-media.jpg">
+                                <div class="explore-cap card-img-overlay h-100 d-flex flex-column justify-content-end">
+                                    <h1 class="card-text">Houses</h1>
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="card">
+                                <img class="card-img-top" src="media/explore-people-media.jpg">
+                                <div class=" explore-cap card-img-overlay h-100 d-flex flex-column justify-content-end">
+                                    <h1 class="card-text">People</h1>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="media/explore-histories.jpg">
+                                <div class=" explore-cap card-img-overlay h-100 d-flex flex-column justify-content-end">
+                                    <h1 class="card-text">Histories</h1>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="explore-items">
-                        <ul>
-                            <li>
-                                <a href="#"></a>
-                                <img src="#"/>
-                                <p>Map</p>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                                <img src="#"/>
-                                <p>Houses</p>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                                <img src="#"/>
-                                <p>People</p>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                                <img src="#"/>
-                                <p>Histories</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="explore-episodes">
                     </div>
                 </section>
             </section>
-            <footer>
+            <footer class="text-center">
                 <nav>
                     <ul>
                         <li><a href="#">HBO.com</a></li>
